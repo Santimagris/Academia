@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\Academia\Academia2\bin\Debug\Academia2.exe.config
+C:\Users\Admin\Desktop\Academia\Academia2\bin\Debug\Academia2.exe
+C:\Users\Admin\Desktop\Academia\Academia2\bin\Debug\Academia2.pdb
+C:\Users\Admin\Desktop\Academia\Academia2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.Properties.Resources.resources
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.csproj.Up2Date
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.exe
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.pdb
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.exe.config
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.FormMainMenu.resources
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.Forms.FormAlumnas.resources
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.Forms.FormDanzas.resources
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.Forms.FormPagos.resources
+C:\Users\Admin\Desktop\Academia\Academia2\obj\Debug\Academia2.Forms.FormReportes.resources
