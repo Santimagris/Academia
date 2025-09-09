@@ -31,10 +31,6 @@ namespace Academia2
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-
-            SetupTitleBtn(buttonClose);
-            SetupTitleBtn(buttonMax);
-            SetupTitleBtn(buttonMin);
         }
 
         //Methods
@@ -138,17 +134,6 @@ namespace Academia2
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        
-        private void SetupTitleBtn(Button b)
-        {
-            b.FlatStyle = FlatStyle.Flat;
-            b.UseVisualStyleBackColor = false;   // permite pintar BackColor
-            b.FlatAppearance.BorderSize = 0;
-            b.BackColor = System.Drawing.Color.Transparent;     // o el que uses por defecto
-
-            b.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;        // hover
-            b.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;  // presionado
-        }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
@@ -158,9 +143,9 @@ namespace Academia2
         private void buttonMax_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
+                this.WindowState = FormWindowState.Maximized;
             else
-                WindowState = FormWindowState.Normal;
+                this.WindowState = FormWindowState.Normal;
         }
 
         private void buttonMin_Click(object sender, EventArgs e)
