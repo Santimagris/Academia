@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Academia2.Repositories;
@@ -15,7 +16,6 @@ namespace Academia2.Forms
         public FormAlumnas()
         {
             InitializeComponent();
-
 
             // Conectar evento del buscador
             textBoxBuscar.TextChanged += textBoxBuscar_TextChanged;

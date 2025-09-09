@@ -1,4 +1,6 @@
-﻿namespace Academia2.Forms
+﻿using System.Drawing;
+
+namespace Academia2.Forms
 {
     partial class FormAlumnas
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelAcciones = new System.Windows.Forms.Panel();
             this.panelBuscador = new System.Windows.Forms.Panel();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
@@ -131,7 +134,16 @@
             this.dataGridViewAlumnas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewAlumnas.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridViewAlumnas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAlumnas.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewAlumnas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewAlumnas.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewAlumnas.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewAlumnas.MultiSelect = false;
             this.dataGridViewAlumnas.Name = "dataGridViewAlumnas";
@@ -140,6 +152,11 @@
             this.dataGridViewAlumnas.ShowCellErrors = false;
             this.dataGridViewAlumnas.Size = new System.Drawing.Size(989, 528);
             this.dataGridViewAlumnas.TabIndex = 0;
+            this.dataGridViewAlumnas.ForeColor = Color.Black;
+            this.dataGridViewAlumnas.DefaultCellStyle.ForeColor = Color.Black;
+            this.dataGridViewAlumnas.RowsDefaultCellStyle.ForeColor = Color.Black;
+            this.dataGridViewAlumnas.AlternatingRowsDefaultCellStyle.ForeColor = Color.Black;
+            this.dataGridViewAlumnas.RowHeadersDefaultCellStyle.ForeColor = Color.Black;
             // 
             // FormAlumnas
             // 
@@ -150,6 +167,7 @@
             this.Controls.Add(this.panelAcciones);
             this.Name = "FormAlumnas";
             this.Text = "FormAlumnas";
+            this.Load += new System.EventHandler(this.FormAlumnas_Load);
             this.panelAcciones.ResumeLayout(false);
             this.panelBuscador.ResumeLayout(false);
             this.panelBuscador.PerformLayout();
