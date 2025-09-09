@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panelAcciones = new System.Windows.Forms.Panel();
-            this.flowLayoutPanelDer = new System.Windows.Forms.FlowLayoutPanel();
             this.panelBuscador = new System.Windows.Forms.Panel();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanelDer = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonNuevaAlumna = new System.Windows.Forms.Button();
             this.buttonEditarAlumna = new System.Windows.Forms.Button();
             this.buttonDesAlumna = new System.Windows.Forms.Button();
-            this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.panelTabla = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewAlumnas = new System.Windows.Forms.DataGridView();
             this.panelAcciones.SuspendLayout();
-            this.flowLayoutPanelDer.SuspendLayout();
             this.panelBuscador.SuspendLayout();
+            this.flowLayoutPanelDer.SuspendLayout();
             this.panelTabla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlumnas)).BeginInit();
             this.SuspendLayout();
             // 
             // panelAcciones
@@ -56,6 +56,23 @@
             this.panelAcciones.Size = new System.Drawing.Size(989, 56);
             this.panelAcciones.TabIndex = 0;
             // 
+            // panelBuscador
+            // 
+            this.panelBuscador.Controls.Add(this.textBoxBuscar);
+            this.panelBuscador.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelBuscador.Location = new System.Drawing.Point(10, 10);
+            this.panelBuscador.Name = "panelBuscador";
+            this.panelBuscador.Size = new System.Drawing.Size(300, 36);
+            this.panelBuscador.TabIndex = 1;
+            // 
+            // textBoxBuscar
+            // 
+            this.textBoxBuscar.Location = new System.Drawing.Point(11, 8);
+            this.textBoxBuscar.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxBuscar.Name = "textBoxBuscar";
+            this.textBoxBuscar.Size = new System.Drawing.Size(276, 20);
+            this.textBoxBuscar.TabIndex = 0;
+            // 
             // flowLayoutPanelDer
             // 
             this.flowLayoutPanelDer.Controls.Add(this.buttonNuevaAlumna);
@@ -67,15 +84,6 @@
             this.flowLayoutPanelDer.Size = new System.Drawing.Size(397, 36);
             this.flowLayoutPanelDer.TabIndex = 0;
             this.flowLayoutPanelDer.WrapContents = false;
-            // 
-            // panelBuscador
-            // 
-            this.panelBuscador.Controls.Add(this.textBoxBuscar);
-            this.panelBuscador.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelBuscador.Location = new System.Drawing.Point(10, 10);
-            this.panelBuscador.Name = "panelBuscador";
-            this.panelBuscador.Size = new System.Drawing.Size(300, 36);
-            this.panelBuscador.TabIndex = 1;
             // 
             // buttonNuevaAlumna
             // 
@@ -107,39 +115,31 @@
             this.buttonDesAlumna.Text = "Deshabilitar Alumna";
             this.buttonDesAlumna.UseVisualStyleBackColor = true;
             // 
-            // textBoxBuscar
-            // 
-            this.textBoxBuscar.Location = new System.Drawing.Point(11, 8);
-            this.textBoxBuscar.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(276, 20);
-            this.textBoxBuscar.TabIndex = 0;
-            // 
             // panelTabla
             // 
-            this.panelTabla.Controls.Add(this.dataGridView1);
+            this.panelTabla.Controls.Add(this.dataGridViewAlumnas);
             this.panelTabla.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTabla.Location = new System.Drawing.Point(0, 56);
             this.panelTabla.Name = "panelTabla";
             this.panelTabla.Size = new System.Drawing.Size(989, 528);
             this.panelTabla.TabIndex = 1;
             // 
-            // dataGridView1
+            // dataGridViewAlumnas
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.ShowCellErrors = false;
-            this.dataGridView1.Size = new System.Drawing.Size(989, 528);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewAlumnas.AllowUserToAddRows = false;
+            this.dataGridViewAlumnas.AllowUserToDeleteRows = false;
+            this.dataGridViewAlumnas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAlumnas.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dataGridViewAlumnas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAlumnas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewAlumnas.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewAlumnas.MultiSelect = false;
+            this.dataGridViewAlumnas.Name = "dataGridViewAlumnas";
+            this.dataGridViewAlumnas.ReadOnly = true;
+            this.dataGridViewAlumnas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewAlumnas.ShowCellErrors = false;
+            this.dataGridViewAlumnas.Size = new System.Drawing.Size(989, 528);
+            this.dataGridViewAlumnas.TabIndex = 0;
             // 
             // FormAlumnas
             // 
@@ -151,11 +151,11 @@
             this.Name = "FormAlumnas";
             this.Text = "FormAlumnas";
             this.panelAcciones.ResumeLayout(false);
-            this.flowLayoutPanelDer.ResumeLayout(false);
             this.panelBuscador.ResumeLayout(false);
             this.panelBuscador.PerformLayout();
+            this.flowLayoutPanelDer.ResumeLayout(false);
             this.panelTabla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlumnas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,6 +170,6 @@
         private System.Windows.Forms.Button buttonDesAlumna;
         private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Panel panelTabla;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewAlumnas;
     }
 }
