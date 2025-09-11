@@ -5,7 +5,7 @@ using System.Data.SQLite;  // <-- cambia el using
 
 namespace Academia2.Repositories
 {
-    public class AlumnasRepository
+    public class DanzasRepository
     {
         public DataTable GetAllAsDataTable()
         {
@@ -16,9 +16,9 @@ namespace Academia2.Repositories
                 using (var cmd = con.CreateCommand())
                 {
                     cmd.CommandText = @"
-                        SELECT id, apellido, nombre, dni, direccion, status
-                        FROM alumna
-                        ORDER BY apellido, nombre;";
+                        SELECT id, nombre, status
+                        FROM danza
+                        ORDER BY nombre;";
                     using (var rdr = cmd.ExecuteReader())
                         dt.Load(rdr);
                 }
